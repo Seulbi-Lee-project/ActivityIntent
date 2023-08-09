@@ -9,7 +9,7 @@
     tools:context=".FirstActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp"
@@ -51,6 +51,23 @@
             android:onClick="doOnBtnClick"
             android:layout_marginTop="20dp"
             android:text="지도보기 작업 시작하기" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_data"
+                android:layout_weight="1"
+                android:hint="데이터 입력"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="세번째 액티비티에 데이터 전달"
+                android:id="@+id/buttonThirdActivity"/>
+        </LinearLayout>
 
     </LinearLayout>
 
