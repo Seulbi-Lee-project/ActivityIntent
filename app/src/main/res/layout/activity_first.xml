@@ -8,26 +8,50 @@
     android:padding="16dp"
     tools:context=".FirstActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="첫번째 액티비티 입니다."
+        android:orientation="vertical"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".FirstActivity">
 
-    <Button
-        android:id="@+id/buttonFirstActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="두번째 액티비티 시작하기"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="첫번째 액티비티 입니다." />
+
+        <Button
+            android:id="@+id/buttonFirstActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="두번째 액티비티 시작하기" />
+
+        <Button
+            android:id="@+id/buttonDialActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="doOnBtnClick"
+            android:layout_marginTop="20dp"
+            android:text="다이얼 작업 시작하기" />
+
+        <Button
+            android:id="@+id/buttonMapActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="doOnBtnClick"
+            android:layout_marginTop="20dp"
+            android:text="지도보기 작업 시작하기" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
